@@ -5,11 +5,12 @@
 }
 
 :root {
+  /*Utility*/
+  --hover-textopacity: opacity(60%);
+  /*Colors*/
   --bg-color: #fff;
   --text-color: #333;
   --navbar-color: blue;
-  --hover-textopacity: opacity(60%);
-  --nohover-textopacity: opacity(100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -45,19 +46,15 @@
   /*Header||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
   .Header {
-    display: contents;
-  }
-
-  /*Nav*/
-
-  .Nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
 
-  .navbar {
+  /*Nav*/
+
+  .Nav {
     background-color: var(--navbar-color);
     display: flex;
     justify-content: space-between;
@@ -101,5 +98,40 @@
   }
   .navbar--item_5 {
     display: flex;
+  }
+  .navbar--itemA_1 {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  .navbar--itemA_1:hover {
+    filter: var(--hover-textopacity);
+  }
+  .navbar--itemA_2 {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  .navbar--itemA_2:hover {
+    filter: var(--hover-textopacity);
+  }
+  .navbar--itemA_3 {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  .navbar--itemA_3:hover {
+    filter: var(--hover-textopacity);
+  }
+  .navbar--itemA_4 {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  .navbar--itemA_4:hover {
+    filter: var(--hover-textopacity);
+  }
+  .navbar--itemA_5 {
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  .navbar--itemA_5:hover {
+    filter: var(--hover-textopacity);
   }
 }
