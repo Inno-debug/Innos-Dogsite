@@ -35,28 +35,43 @@
   }
 
   .Body {
+    display: contents;
   }
 
   /*Header||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
 
   .Header {
+    display: contents;
   }
 
   /*Nav*/
 
   .Nav {
     display: flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+  }
+
+  .Navnavbar {
+    width: var(--navbar-width);
   }
 
   .navbar {
     background-color: var(--navbar-color);
-    width: var(--navbar-width);
-    height: var(--navbar-height);
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: var(--navbar-height);
   }
+
+  .h1 {
+    background-color: blue;
+    height: var(--navbar-height);
+    width: 100%;
+    display: none;
+  }
+
   /*Utility*/
   .navbar__container {
     list-style-type: none;
