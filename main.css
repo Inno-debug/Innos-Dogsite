@@ -53,11 +53,11 @@
     align-items: center;
   }
 
-  .Navnavbar {
+  .Navbar {
     width: var(--navbar-width);
   }
 
-  .navbar {
+  .top--navbar {
     background-color: var(--navbar-color);
     display: flex;
     justify-content: space-around;
@@ -65,7 +65,7 @@
     height: var(--navbar-height);
   }
 
-  .h1 {
+  .bottom--navbar {
     background-color: blue;
     height: var(--navbar-height);
     width: 100%;
