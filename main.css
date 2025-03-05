@@ -65,8 +65,32 @@
     height: var(--navbar-height);
   }
 
-  .bottom--navbar {
+  .bottom--navbar1 {
     background-color: blue;
+    height: var(--navbar-height);
+    width: 100%;
+    display: none;
+  }
+  .bottom--navbar2 {
+    background-color: purple;
+    height: var(--navbar-height);
+    width: 100%;
+    display: none;
+  }
+  .bottom--navbar3 {
+    background-color: red;
+    height: var(--navbar-height);
+    width: 100%;
+    display: none;
+  }
+  .bottom--navbar4 {
+    background-color: green;
+    height: var(--navbar-height);
+    width: 100%;
+    display: none;
+  }
+  .bottom--navbar5 {
+    background-color: pink;
     height: var(--navbar-height);
     width: 100%;
     display: none;
