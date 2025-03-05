@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #333;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg-color: #333;
+    --text-color: #fff;
+  }
+}
+
+@media screen and (min-width: 1080px) {
+  /*Main Elements*/
+
+  :root {
+    --font-size: 1rem;
+  }
+
+  html {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+  }
+
+  .Body {
+  }
+
+  /*Header||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+  .Header {
+  }
+
+  /*Nav*/
+
+  .Nav {
+  }
+
+  .navbar {
+  }
+  /*Utility*/
+  .nav__bar__container {
+  }
+
+  .nav__bar__item {
+  }
+  /*Single Selectors*/
+  .nav__bar--left {
+  }
+
+  .nav__bar--right {
+  }
+
+  .nav__bar--item_1 {
+  }
+  .nav__bar--item_2 {
+  }
+  .nav__bar--item_3 {
+  }
+  .nav__bar--item_4 {
+  }
+  .nav__bar--item_5 {
+  }
+}
