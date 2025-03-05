@@ -7,12 +7,14 @@
 :root {
   --bg-color: #fff;
   --text-color: #333;
+  --navbar-color: blue;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --bg-color: #333;
     --text-color: #fff;
+    --navbar-color: blue;
   }
 }
 
@@ -20,7 +22,11 @@
   /*Main Elements*/
 
   :root {
-    --font-size: 1rem;
+    /*Nav*/
+    --navbar-width: 80%;
+    --navbar-height: 100px;
+    --navbar--left-gap: 96px;
+    --navbar__container-font-size: 1.5rem;
   }
 
   html {
@@ -39,31 +45,50 @@
   /*Nav*/
 
   .Nav {
+    display: flex;
+    justify-content: center;
   }
 
   .navbar {
+    background-color: var(--navbar-color);
+    width: var(--navbar-width);
+    height: var(--navbar-height);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
   }
   /*Utility*/
-  .nav__bar__container {
+  .navbar__container {
+    list-style-type: none;
+    display: flex;
+    font-size: var(--navbar__container-font-size);
   }
 
-  .nav__bar__item {
+  .navbar__item {
+    display: flex;
   }
   /*Single Selectors*/
-  .nav__bar--left {
+  .navbar--left {
+    gap: var(--navbar--left-gap);
   }
 
-  .nav__bar--right {
+  .navbar--right {
+    display: flex;
   }
 
-  .nav__bar--item_1 {
+  .navbar--item_1 {
+    display: flex;
   }
-  .nav__bar--item_2 {
+  .navbar--item_2 {
+    display: flex;
   }
-  .nav__bar--item_3 {
+  .navbar--item_3 {
+    display: flex;
   }
-  .nav__bar--item_4 {
+  .navbar--item_4 {
+    display: flex;
   }
-  .nav__bar--item_5 {
+  .navbar--item_5 {
+    display: flex;
   }
 }
