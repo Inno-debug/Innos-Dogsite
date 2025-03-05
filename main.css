@@ -8,6 +8,8 @@
   --bg-color: #fff;
   --text-color: #333;
   --navbar-color: blue;
+  --hover-textopacity: opacity(60%);
+  --nohover-textopacity: opacity(100%);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -27,6 +29,8 @@
     --navbar-height: 100px;
     --navbar--left-gap: 96px;
     --navbar__container-font-size: 1.5rem;
+    --navbarpaddingleft: 100px;
+    --navbarpaddingright: 100px;
   }
 
   html {
@@ -53,47 +57,15 @@
     align-items: center;
   }
 
-  .Navbar {
-    width: var(--navbar-width);
-  }
-
-  .top--navbar {
+  .navbar {
     background-color: var(--navbar-color);
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     height: var(--navbar-height);
-  }
-
-  .bottom--navbar1 {
-    background-color: blue;
-    height: var(--navbar-height);
-    width: 100%;
-    display: none;
-  }
-  .bottom--navbar2 {
-    background-color: purple;
-    height: var(--navbar-height);
-    width: 100%;
-    display: none;
-  }
-  .bottom--navbar3 {
-    background-color: red;
-    height: var(--navbar-height);
-    width: 100%;
-    display: none;
-  }
-  .bottom--navbar4 {
-    background-color: green;
-    height: var(--navbar-height);
-    width: 100%;
-    display: none;
-  }
-  .bottom--navbar5 {
-    background-color: pink;
-    height: var(--navbar-height);
-    width: 100%;
-    display: none;
+    width: var(--navbar-width);
+    padding-left: var(--navbarpaddingleft);
+    padding-right: var(--navbarpaddingright);
   }
 
   /*Utility*/
