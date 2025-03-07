@@ -11,20 +11,20 @@
     <!--Initial Screen-->
     <div class="initial-screen">
       <h2>Welcome</h2>
-      <button id="loginScreenButton" class="screenButton login_initial_screen">
-        Login
-      </button>
       <button
         id="registerScreenButton"
         class="screenButton register_initial_screen"
       >
         Register
       </button>
+      <button id="loginScreenButton" class="screenButton login_initial_screen">
+        Login
+      </button>
     </div>
     <!--Register Screen-->
     <div class="register-container">
       <h2>Register</h2>
-      <div class="form">
+      <form class="registerform">
         <label for="new-username">Username</label>
         <input
           type="text"
@@ -43,25 +43,17 @@
           required
         />
 
-        <label for="confirm-password">Confirm Password</label>
-        <input
-          type="password"
-          id="confirm-password"
-          class="password"
-          name="confirm-password"
-          autocomplete="new-password"
-          required
-        />
-
-        <button id="registerButton" class="registerButton">Register</button>
+        <button type="submit" id="registerButton" class="registerButton">
+          Register
+        </button>
 
         <button id="backloginButton" class="backloginButton">Login</button>
-      </div>
+      </form>
     </div>
     <!--Login Screen-->
     <div class="login-container">
       <h2>Login</h2>
-      <div class="form">
+      <form class="loginform">
         <label for="username">Username</label>
         <input
           type="text"
@@ -86,7 +78,7 @@
         <button id="backregisterButton" class="backregisterButton">
           Register
         </button>
-      </div>
+      </form>
     </div>
     <!--Home Screen-->
     <div class="home-screen">
