@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: Arial, sans-serif;
   background-color: #333;
@@ -8,8 +14,10 @@ body {
   margin: 0;
 }
 
+.initial-screen,
 .login-container,
-.register-container {
+.register-container,
+.home-screen {
   background-color: #fff;
   padding: 20px;
   border-radius: 8px;
@@ -52,14 +60,34 @@ button:hover {
   background-color: #0056b3;
 }
 
-.register-container {
+.initial-screen {
+  display: flex;
+  flex-direction: column;
+}
+
+.screenButton {
+  margin-bottom: 10px;
+}
+
+.initial-screen {
   display: unset;
 }
 
+.register-container {
+  display: none;
+}
 .login-container {
   display: none;
 }
-
 .home-screen {
   display: none;
+}
+
+.backloginButton {
+  margin-top: 20px;
+  background-color: #333;
+}
+.backregisterButton {
+  margin-top: 20px;
+  background-color: #333;
 }

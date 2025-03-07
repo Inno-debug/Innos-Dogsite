@@ -1,13 +1,19 @@
-<!DOCTYPE html>
 <!--cd Documents\Web Dev\JavaScript\Innos-Dogsite-->
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Register</title>
+    <title>Login or Register</title>
     <link rel="stylesheet" href="main.css" />
   </head>
   <body>
+    <div class="initial-screen">
+      <h2>Welcome</h2>
+      <button id="loginScreenButton" class="screenButton">Login</button>
+      <button id="registerScreenButton" class="screenButton">Register</button>
+    </div>
+
     <div class="register-container">
       <h2>Register</h2>
       <div class="form">
@@ -19,9 +25,7 @@
           name="username"
           autocomplete="username"
           required
-        />
-
-        <label for="new-password">Password</label>
+        /><label for="new-password">Password</label>
         <input
           type="password"
           id="new-password"
@@ -42,6 +46,8 @@
         />
 
         <button id="registerButton" class="registerButton">Register</button>
+
+        <button id="backloginButton" class="backloginButton">Login</button>
       </div>
     </div>
 
@@ -69,6 +75,9 @@
         />
 
         <button id="loginButton" class="loginButton">Login</button>
+        <button id="backregisterButton" class="backregisterButton">
+          Register
+        </button>
       </div>
     </div>
 
