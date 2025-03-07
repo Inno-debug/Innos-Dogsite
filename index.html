@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--cd Documents\Web Dev\JavaScript\Innos-Dogsite-->
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="register-container">
+      <h2>Register</h2>
+      <div class="form">
+        <label for="new-username">Username</label>
+        <input
+          type="text"
+          id="new-username"
+          class="username"
+          name="username"
+          autocomplete="username"
+          required
+        />
+
+        <label for="new-password">Password</label>
+        <input
+          type="password"
+          id="new-password"
+          class="password"
+          name="password"
+          autocomplete="new-password"
+          required
+        />
+
+        <label for="confirm-password">Confirm Password</label>
+        <input
+          type="password"
+          id="confirm-password"
+          class="password"
+          name="confirm-password"
+          autocomplete="new-password"
+          required
+        />
+
+        <button id="registerButton" class="registerButton">Register</button>
+      </div>
+    </div>
+
+    <div class="login-container">
+      <h2>Login</h2>
+      <div class="form">
+        <label for="username">Username</label>
+        <input
+          type="text"
+          id="username"
+          class="username"
+          name="username"
+          autocomplete="username"
+          required
+        />
+
+        <label for="password">Password</label>
+        <input
+          type="password"
+          id="password"
+          class="password"
+          name="password"
+          autocomplete="current-password"
+          required
+        />
+
+        <button id="loginButton" class="loginButton">Login</button>
+      </div>
+    </div>
+
+    <div class="home-screen">
+      <h2>Home Screen</h2>
+      <p>Welcome to the home screen!</p>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
